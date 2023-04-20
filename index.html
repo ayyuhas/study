@@ -28,6 +28,45 @@
       margin-left: 20px;
       margin-top: 20px;
     }
+    /* 点 代表class 后面的字代表class的名称 */
+    .p1 {
+      margin-left: 200px;
+      /* 字体大小 */
+      font-size: 28px;
+      /* 字体 */
+      font-family: PingFangSC-Semibold,PingFang SC;
+      /* 字重 */
+      font-weight: 600;
+      /* 颜色 */
+      color: #0f1358;
+    }
+    .p2 {
+      font-size: 18px;
+      font-family: PingFangSC-Regular,PingFang SC;
+      font-weight: 400;
+      color: rgba(15,19,88,0.65);
+      margin-left: 50px;
+    }
+    div {
+      margin-left: 100px;
+    }
+    /* #代表id */
+    #bgid {
+      width: 527px;
+      height: 286px;
+      /* 背景图片是否可重复 */
+      background-repeat: no-repeat;
+      /* 背景的大小：container 填充 */
+      background-size: contain;
+      /* 背景图片 */
+      background-image: url(https://apps.uat.choerodon.com.cn/register-organization/assets/bg.fd745bbe.png);
+      /* 绝对定位 */
+      position: absolute;
+      /* 距离上面多少 */
+      top: 224px;
+      /* 距离左边多少 还有两个可控制方向的属性：right, bottom */
+      left: 139px;
+    }
   </style>
 </head>
 <body>
@@ -36,5 +75,19 @@
   <!-- src：图片的地址 -->
   <!-- alt一般可以不用写 它表示图片如果加载有问题 不出现的时候 鼠标hover上显示的提示语 -->
   <img src="https://choerodon.zknow.com/register-organization/assets/logo.9c5a718f.svg" alt="">
+  <!-- P 代表段落 一般可指一段话 -->
+  <!-- class代表类名 输入不同的class 可单独区分 -->
+  <p class="p1">一分钟快速填写，预约DEMO体验！</p>
+  <!-- div代表容器 它的作用 就是将一系列相关的元素包裹在一起 -->
+  <div>
+    <!-- style也可以单独写在元素上 他和head中的style是一个并集关系 -->
+    <!-- 如果跟class的样式重复 元素上的style优先级更高 -->
+    <p class="p2" style="margin-left: 100px;">进度可视、协作顺，高效管理企业研发和项目，</p>
+    <p class="p2">猪齿鱼提供协作、测试、DevOps及容器工具，助力团队效能更快更强更稳定。</p>
+  </div>
+  <!-- id 和 class都是用来区分不同的元素 -->
+  <!-- id：它的值是唯一的 -->
+  <!-- class：它的值可以有多个元素可以用 -->
+  <div id="bgid"></div>
 </body>
 </html>
